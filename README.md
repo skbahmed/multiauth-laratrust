@@ -21,7 +21,7 @@
         </ul>
     </li>
     <h4>Your project is now running.</h4>
-    <li>Open any browser and go to <a href="http://localhost:8000/">localhost:8000</a> to view the project</li>
+    <li>Open any browser and go to <a href="http://localhost:8000/" target="_blank">localhost:8000</a> to view the project</li>
 </ul>
 
 <h2>Thank You</h2>
