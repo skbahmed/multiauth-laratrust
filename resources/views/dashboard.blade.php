@@ -29,7 +29,7 @@
                         {{ __('You are logged in as a Blogger!') }}
                     @endrole
 
-                    @role('user')
+                    @role('admin')
                         {{ __('You are logged in as an Admin!') }}
                     @endrole
                     
