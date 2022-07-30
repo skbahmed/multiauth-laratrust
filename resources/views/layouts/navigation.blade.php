@@ -17,29 +17,29 @@
                     </x-nav-link>
                 </div>
 
-                @if (Auth::user()->hasRole('user'))
-                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                        <x-nav-link :href="route('dashboard.profile')" :active="request()->routeIs('dashboard.profile')">
-                            {{ __('Profile') }}
-                        </x-nav-link>
-                    </div>
-                @endif
-
-                @if (Auth::user()->hasRole('blogger'))
+                @role('blogger')
                     <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                         <x-nav-link :href="route('dashboard.create-post')" :active="request()->routeIs('dashboard.create-post')">
                             {{ __('Create Post') }}
                         </x-nav-link>
                     </div>
-                @endif
+                @endrole
 
-                @if (Auth::user()->hasRole('admin'))
+                @role('user')
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-nav-link :href="route('dashboard.profile')" :active="request()->routeIs('dashboard.profile')">
+                            {{ __('Profile') }}
+                        </x-nav-link>
+                    </div>
+                @endrole
+
+                @role('admin')
                     <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                         <x-nav-link :href="route('dashboard.manage-user')" :active="request()->routeIs('dashboard.manage-user')">
                             {{ __('Manage User') }}
                         </x-nav-link>
                     </div>
-                @endif
+                @endrole
             </div>
 
             <!-- Settings Dropdown -->
