@@ -1,3 +1,31 @@
+<h2>Instruction to run this into your machine</h2>
+<ul>
+    <li><a href="https://github.com/skbahmed/multiauth-laratrust/archive/refs/heads/master.zip">Download</a> the zip file and unzip it.</li>
+    <li>Open folder in a code editor.</li>
+    <li>Open .env file and Change DB_DATABASE, DB_USERNAME and DB_PASSWORD as per your MySQL Database</li>
+    <li>Open terminal and go to the file directory.</li>
+    <li>
+        Now run these commands in terminal:
+        <ul>
+            <li><strong>php artisan migrate</strong></li>
+            <li><strong>php artisan db:seed</strong></li>
+            <li>npm install</li>
+            <li>npm run dev</li>
+        </ul>
+    </li>
+    <li>Open another terminal and go to the file directroy. Don't close the previous terminal</li>
+    <li>
+        Now run this Command in the new terminal
+        <ul>
+            <li>php artisan serve</li>
+        </ul>
+    </li>
+    <h4>Your project is now running.</h4>
+    <li>Open any browser and go to <a href="http://localhost:8000/">localhost:8000</a> to view the project</li>
+</ul>
+
+<h2>Thank You</h2>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
